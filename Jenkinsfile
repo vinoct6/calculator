@@ -2,7 +2,7 @@ pipeline {
 	agent any 
 	stages {
 		
-		stage("compile") {
+		stage("compile me hello") {
 			steps {
 				sh "./gradlew compileJava"
 			}
