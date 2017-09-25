@@ -14,6 +14,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: "jacoco"
+apply plugin: 'checkstyle'
 
 group = 'com.vinoth'
 version = '0.0.1-SNAPSHOT'
@@ -32,7 +33,7 @@ jacocoTestCoverageVerification {
 	violationRules {
 		rule {
 			limit {
-				minimum = 0.2
+				minimum = 0.25
 			}
 		}
 	}
