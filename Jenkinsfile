@@ -43,4 +43,12 @@ pipeline {
         }
 	
 	}
+
+	post {
+         failure {
+              slackSend channel: '#builid-notifications',
+              color: 'danger',
+              message: "The pipeline ${currentBuild.fullDisplayName} failed."
+         }
+    }
 }
