@@ -8,6 +8,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertEquals;
 
 
+/**
+ * hello
+ */
 public class CalculatorApplicationTests {
 
 	private Calculator calculator = new Calculator();
